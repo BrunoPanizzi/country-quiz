@@ -576,14 +576,6 @@ export default [
     },
   },
   {
-    name: 'Heard Island and McDonald Islands',
-    flag: {
-      emoji: '🇭🇲',
-      png: 'https://flagcdn.com/w320/hm.png',
-      svg: 'https://flagcdn.com/hm.svg',
-    },
-  },
-  {
     name: 'Burundi',
     capital: 'Gitega',
     flag: {
@@ -1034,14 +1026,6 @@ export default [
     },
   },
   {
-    name: 'Bouvet Island',
-    flag: {
-      emoji: '🇧🇻',
-      png: 'https://flagcdn.com/w320/bv.png',
-      svg: 'https://flagcdn.com/bv.svg',
-    },
-  },
-  {
     name: 'Anguilla',
     capital: 'The Valley',
     flag: {
@@ -1237,14 +1221,6 @@ export default [
       emoji: '🇿🇼',
       png: 'https://flagcdn.com/w320/zw.png',
       svg: 'https://flagcdn.com/zw.svg',
-    },
-  },
-  {
-    name: 'Antarctica',
-    flag: {
-      emoji: '🇦🇶',
-      png: 'https://flagcdn.com/w320/aq.png',
-      svg: 'https://flagcdn.com/aq.svg',
     },
   },
   {
@@ -1731,14 +1707,6 @@ export default [
       emoji: '🇪🇹',
       png: 'https://flagcdn.com/w320/et.png',
       svg: 'https://flagcdn.com/et.svg',
-    },
-  },
-  {
-    name: 'Macau',
-    flag: {
-      emoji: '🇲🇴',
-      png: 'https://flagcdn.com/w320/mo.png',
-      svg: 'https://flagcdn.com/mo.svg',
     },
   },
   {
