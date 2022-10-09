@@ -1,6 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
+
+import generateSeed from '../../utils/generateSeed'
 
 import Button from '../../components/Button'
 
@@ -34,7 +35,3 @@ const Container = styled.div`
     margin-block-end: 2rem;
   }
 `
-
-function generateSeed() {
-  return Math.round(Math.random() * 1000000)
-}
