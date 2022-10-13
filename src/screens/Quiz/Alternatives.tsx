@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+import { useState } from 'react'
+import styled, { css } from 'styled-components'
+import Button from '../../components/Button'
 import { option } from './types'
 
 interface props {
@@ -13,33 +15,34 @@ export default function Alternatives({
   onSuccess,
   onFail,
 }: props) {
+  const [selected, setSelected] = useState('')
+
+  const correct = alternatives.find((a) => a.isCorrect)!
+
   return (
     <div>
       {alternatives.map((option, i) => (
         <Alternative
-          onClick={option.isCorrect ? onSuccess : onFail}
-          letter={letters[i]}
+          onClick={() => setSelected(option.country)}
+          selected={selected === option.country}
           key={option.country}
         >
+          <span>{letters[i]}</span>
           {option.country}
         </Alternative>
       ))}
+      {selected && (
+        <Button onClick={selected === correct.country ? onSuccess : onFail}>
+          Submit
+        </Button>
+      )}
     </div>
   )
 }
 
-const Alternative = (p: {
-  onClick: () => void
-  children: string
-  letter: string
-}) => (
-  <AlternativeContainer onClick={p.onClick}>
-    <span>{p.letter}</span>
-    {p.children}
-  </AlternativeContainer>
-)
-
-const AlternativeContainer = styled.button`
+const Alternative = styled.button<{
+  selected: boolean
+}>`
   outline: none;
   display: block;
   width: 100%;
@@ -60,10 +63,20 @@ const AlternativeContainer = styled.button`
     background: #f9a826;
     border-color: #f9a826;
     color: white;
+    opacity: 0.75;
   }
 
   span {
     font-size: 1.25rem;
     margin-inline-end: 2rem;
   }
+
+  ${({ selected }) =>
+    selected &&
+    css`
+      background: #f9a826;
+      border-color: #f9a826;
+      color: white;
+      opacity: 1 !important;
+    `}
 `
