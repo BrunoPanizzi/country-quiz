@@ -24,4 +24,4 @@ export interface questionProps {
   onFail: () => void
 }
 
-export type result = (0 | 1)[]
+export type result = number[]

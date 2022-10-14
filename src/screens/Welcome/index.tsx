@@ -12,7 +12,7 @@ export default function Welcome() {
 
   return (
     <Container>
-      <h3>Welcome to the Country quiz!</h3>
+      <h2>Welcome to the Country quiz!</h2>
       <p>Are you ready to test your knowledge about the world?</p>
 
       <Button to={`/quiz/${seed}`}>Start!</Button>
@@ -25,9 +25,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h3 {
-    font-size: 1.5rem;
-    color: #1d3249;
+  h2 {
+    font-size: 2rem;
+    color: var(--blue);
     margin: 0;
   }
 

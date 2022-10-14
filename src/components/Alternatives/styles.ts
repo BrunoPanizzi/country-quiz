@@ -11,11 +11,11 @@ export const Alternative = styled.button<{
   display: block;
   width: 100%;
   background: transparent;
-  border: 3px solid #1d3249;
+  border: 3px solid var(--blue);
   margin-block: 1.25rem;
   padding: 1rem;
   border-radius: 1rem;
-  color: #1d3249;
+  color: var(--blue);
   font-family: 'Roboto Slab', serif;
   font-size: 1.125rem;
   font-weight: 600;
@@ -32,14 +32,14 @@ export const Alternative = styled.button<{
     if (status === 'fail') {
       if (selected && !isCorrect) {
         return css`
-          background: #f54e42;
-          border-color: #f54e42;
+          background: var(--red);
+          border-color: var(--red);
           color: white;
         `
       } else if (!selected && isCorrect) {
         return css`
-          background: #42cc35;
-          border-color: #42cc35;
+          background: var(--green);
+          border-color: var(--green);
           color: white;
         `
       }
@@ -49,16 +49,16 @@ export const Alternative = styled.button<{
     }
     return css`
       &:hover {
-        background: #f9a826;
-        border-color: #f9a826;
+        background: var(--yellow);
+        border-color: var(--yellow);
         color: white;
         opacity: 0.75;
       }
 
       ${selected &&
       css`
-        background: #f9a826;
-        border-color: #f9a826;
+        background: var(--yellow);
+        border-color: var(--yellow);
         color: white;
         opacity: 1 !important;
       `}

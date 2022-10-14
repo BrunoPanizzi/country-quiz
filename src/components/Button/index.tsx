@@ -29,7 +29,7 @@ const styles = css`
   font-weight: bold;
   font-size: 1.25rem;
   color: white;
-  background-color: #f9a826;
+  background-color: var(--yellow);
   box-shadow: 0 6px 16px rgba(249, 168, 38, 0.25);
   border: none;
   padding: 0.75rem 1.75rem;

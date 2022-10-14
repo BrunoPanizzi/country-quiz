@@ -12,6 +12,7 @@ const Content = styled.main`
   & > h1 {
     color: white;
     line-height: 90%;
+    font-size: 2.5rem;
   }
 
   & > div {

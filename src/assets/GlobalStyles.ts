@@ -1,6 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
+
+  :root {
+    --blue: #1d3249;
+    --yellow: #f9a826;
+    --red: #f54e42;
+    --green: #47a855;
+  }
+
   html, body, #root {
     padding: 0;
     margin: 0;
