@@ -4,7 +4,7 @@ import { makeFlagQuestion } from './figureStuffOut'
 
 import { questionProps } from './types'
 
-import Alternatives from './Alternatives'
+import Alternatives from '../../components/Alternatives'
 
 export default function ({ seed, index, onSuccess, onFail }: questionProps) {
   const question = makeFlagQuestion(seed, index)
@@ -14,11 +14,11 @@ export default function ({ seed, index, onSuccess, onFail }: questionProps) {
       <Image src={question.flag} />
       <h2>This is the flag of which country?</h2>
       <Alternatives
+        key={index}
         alternatives={question.options}
         onSuccess={onSuccess}
         onFail={onFail}
       />
-      <button onClick={onSuccess}>click</button>
     </>
   )
 }

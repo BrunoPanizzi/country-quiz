@@ -23,3 +23,5 @@ export interface questionProps {
   onSuccess: () => void
   onFail: () => void
 }
+
+export type result = (0 | 1)[]
