@@ -14,6 +14,7 @@ export default function Results() {
   return (
     <Container>
       <h2>Results</h2>
+      {nOfCorrects === 4 && <p>congratulations!!!</p>}
       <span>
         You got <Strong>{nOfCorrects}</Strong> awnsers correct
       </span>
@@ -40,6 +41,6 @@ const Container = styled.div`
 `
 
 const Strong = styled.strong`
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--green);
 `
